@@ -153,7 +153,7 @@ header img{
 #about-me {
     background-color: #f1f9f4;
     padding: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 #about-me p{
@@ -273,7 +273,7 @@ header img{
 #experience {
     background-color: #f1f9f4;
     padding: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 #experience > div {
@@ -291,6 +291,13 @@ header img{
 
 #experience h4, h5 {
     text-align: center;
+}
+
+#experience h5 img {
+    width: 24px;
+    position: relative;
+    top: 5px;
+    padding-right: 20px;
 }
 
 .experience-list {
@@ -372,21 +379,26 @@ header img{
     justify-content: space-around;
     padding: 20px;
     gap: 100px;
+    position: relative;
+    background-color: #295d51;
+    /* background-image: url(img/background-leaf.jpg); */
+    background-size: cover;
 }
 
 #contact h6 {
-    color: #295d51;
+    color: #d8f1d1;
     font-weight: bold;
     font-size: 2.5rem;
-    margin: 10px;
+    margin-top: 0px;
+    text-transform: uppercase;
 }
 
-#contact section{
-    background-color: #d8f1d1;
+#contact section:first-child{
     flex:1;
     padding: 40px;
-    border-radius: 15px 225px 255px 15px;
-    border:#295d51 4px solid;
+
+    /*border-radius: 15px 225px 255px 15px;
+    border:#295d51 4px solid; */
     /* border-bottom-right-radius: 15px 255px;
     border-bottom-left-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
@@ -410,6 +422,56 @@ header img{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+input, textarea {
+    color: white;
+    /* border: 0.5px white solid; */
+    border-radius: 5px;
+    min-height: 30px;
+    margin: 0;
+    background-color: #0000004f;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+}
+
+input::placeholder ,textarea::placeholder {
+    color: white;
+    font-family: 'Montserrat';
+    padding-left: 10px;
+}
+
+#contact-bar {
+    position: fixed;
+    height: 200px;
+    padding: 5px 10px;
+    top: 80%;
+    right: 20px;
+    z-index: 999;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-right: 4px solid #295d4a;
+}
+
+#contact-bar img {
+    width: 32px;
+    height: auto;
+}
+
+hr {
+    margin: 0px;
+    border:#295d4a 10px solid;
+}
+
+.buttonContact {
+    background-color: #c1f5d8;
+    border:#2e5d29 0px solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color:#2e5d29;
+    cursor: pointer;
 }
 
 /* CSS */
