@@ -37,6 +37,9 @@ h3 {
     font-weight: 500;
 }
 h4 {
+    background-image: linear-gradient(to right, #57ab92 0%, #295d4a 110%);
+    background-clip: text;
+    color: transparent;
     font-size: 3em;
     font-weight: 600;
     line-height: 1em;
@@ -72,7 +75,9 @@ p {
 }
 
 .nav-bar h1{
-    color: #295d4a;
+    background-image: linear-gradient(to right, #57ab92 0%, #295d4a 70%);
+    background-clip: text;
+    color: transparent;
     font-size: 2.5em;
     padding: 10px 10px;
     padding-left: 20px;
@@ -106,6 +111,7 @@ header {
     flex-direction: row;
     padding: 75px 20px;
     gap: 0px 50px;
+    justify-content: space-evenly;
 }
 
 header h3{
@@ -127,6 +133,14 @@ header img{
     color: black;
 }
 
+.title h1{
+    background-image: linear-gradient(to right, #57ab92 0%, #295d4a 70%);
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    line-height: 70px;
+}
+
 .title h1:hover {
     color: #295d4a;
     transition: color 0.4s;
@@ -137,7 +151,7 @@ header img{
 /**      ABOUT ME     **/
 
 #about-me {
-    /* background-color: goldenrod; */
+    background-color: #f1f9f4;
     padding: 20px;
     margin-bottom: 50px;
 }
@@ -173,7 +187,7 @@ header img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .skill-container {
@@ -257,7 +271,7 @@ header img{
 
 /**     EXPERIENCE     **/
 #experience {
-    /* background-color: plum; */
+    background-color: #f1f9f4;
     padding: 20px;
     margin-bottom: 50px;
 }
@@ -283,7 +297,7 @@ header img{
     /* background-color: beige; */
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 60px;
 }
 
 .experience-list li::marker{
