@@ -166,12 +166,13 @@ header img{
     flex-direction: row;
 }
 
-.flex-row img {
+.card {
     align-self: center;
     width: 200px;
-    border-radius: 100px;
+    border-radius: 20px;
     margin-right: 100px;
-    box-shadow: 0px 0px 20px 1px rgb(26, 94, 65) ;/*offx - offy - blur - spread - color*/
+    /*offx - offy - blur - spread - color */
+    /* box-shadow: 0px 0px 20px 0px rgba(26, 94, 65, 0.238) ;   */
 }
 
 .container{
@@ -219,7 +220,7 @@ header img{
 /**    SERVICES     **/
 #services {
     /* background-color: rgb(245, 161, 130); */
-    padding: 20px;
+    padding: 50px;
     margin-bottom: 50px;
 }
 
@@ -265,7 +266,7 @@ header img{
 }
 
 .services-container p {
-    text-align: justify;
+    text-align: left;
     max-width: 100%;
 }
 
@@ -380,9 +381,19 @@ header img{
     padding: 20px;
     gap: 100px;
     position: relative;
-    background-color: #295d51;
+    background: linear-gradient(60deg, rgba(41,93,81,1) 35%, rgba(28,48,25,1) 100%);
     /* background-image: url(img/background-leaf.jpg); */
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.contact-img {
+    position: absolute;
+    width: 600px;
+    left: 1000px;
+    top: 60px
 }
 
 #contact h6 {
@@ -433,11 +444,13 @@ input, textarea {
     background-color: #0000004f;
     padding-left: 10px;
     font-family: 'Montserrat';
+    border-style: none;
 }
 
 input::placeholder ,textarea::placeholder {
     color: white;
     font-family: 'Montserrat';
+    padding-top: 10px;
     padding-left: 10px;
 }
 
